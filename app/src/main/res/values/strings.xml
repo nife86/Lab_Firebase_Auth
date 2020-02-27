@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab_Firebase_Auth</string>
+    <string name="root">iot20191126</string>
+    <string name="ledState">ledState</string>
+    <string name="rgbLedState">RGBled</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

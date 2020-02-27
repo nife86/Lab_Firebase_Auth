@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_rgbColor"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center|bottom"
+        android:text="RGB Code"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_redMsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:text="RED"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <SeekBar
+            android:id="@+id/sb_red"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:progressTint="#ff0000"
+            android:thumbTint="#ff0000" />
+
+        <EditText
+            android:id="@+id/et_redSetting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_greenMsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:text="GREEN"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <SeekBar
+            android:id="@+id/sb_green"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:progressTint="#00ff00"
+            android:thumbTint="#00ff00" />
+
+        <EditText
+            android:id="@+id/et_greenSetting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_blueMsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:text="BLUE"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <SeekBar
+            android:id="@+id/sb_blue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:progressTint="#0000ff"
+            android:thumbTint="#0000ff" />
+
+        <EditText
+            android:id="@+id/et_blueSetting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_colorSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="colorSet"
+            android:text="SET"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="colorSync"
+            android:text="SYNC ONCE"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cb_alwaysSync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ALWAYS SYNC"
+        android:onClick="clickAlwaysSync"/>
+
+</LinearLayout>
